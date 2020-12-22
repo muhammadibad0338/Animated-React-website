@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0px;
+  padding: 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.demo{
+  background-image: linear-gradient(to right top, #00c9a7, #00bbbe, #00aad0, #0097d6, #0081cf);
+  max-width: 100%;
+  height: 800px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  clip-path: ellipse(60% 57% at 64% 42%);
+}   
+.abc{
+  background-color: aqua;
+  width: 200px;
+  height: 100px;
 }
-
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 991px) {
+  .abc{
+    background-color: olive;
+  
+  }
+  .demo{
+    background-image: linear-gradient(to right top, #00c9a7, #00bbbe, #00aad0, #0097d6, #0081cf);
+    max-width: 100%;
+    height: 500px;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    clip-path: none;
+  }
+  .contc-frnt-1{
+    margin-bottom: 10px;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.order-btn{
+  background-image: linear-gradient(to right top,#00c9a7,#00bbbe,#00aad0,#0097d6,#0081cf);
+  max-width: 130px;
+}
+.cntc-btn{
+  background-image: linear-gradient(to right top,#00c9a7,#00bbbe,#00aad0,#0097d6,#0081cf);
+  width: 40px;
+}
+.icon-img{
+  max-width: 100%;
+  height: 88px;
+  margin-top: 8px;
+}
+.img-box{
+  -webkit-box-shadow: -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         -1px 0px 6px 0px rgba(50, 50, 50, 0.75);
+}
+.srvc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contc-bg{
+  background-image: url("./asset/bg.PNG");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.contc-frnt-1{
+  height: 200px;
+}
+.contc-frnt-2{
+  height: 350px;
+}
+.test{
+  display: flex;
+  justify-content: space-between;
+}
+.q-test{
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
